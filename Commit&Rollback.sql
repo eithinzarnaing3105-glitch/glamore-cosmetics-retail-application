@@ -1,0 +1,79 @@
+prompt --application/set_environment
+set define off verify off feedback off
+whenever sqlerror exit sql.sqlcode rollback
+--------------------------------------------------------------------------------
+--
+-- Oracle APEX export file
+--
+-- You should run this script using a SQL client connected to the database as
+-- the owner (parsing schema) of the application or as a database user with the
+-- APEX_ADMINISTRATOR_ROLE role.
+--
+-- This export file has been automatically generated. Modifying this file is not
+-- supported by Oracle and can lead to unexpected application and/or instance
+-- behavior now or in the future.
+--
+-- NOTE: Calls to apex_application_install override the defaults below.
+--
+--------------------------------------------------------------------------------
+begin
+wwv_flow_imp.import_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_default_workspace_id=>62073229196755335
+);
+end;
+/
+-- Oracle APEX 24.2.17 SQL Script Export file
+-- Exported 09:37 Thursday October 1, 2026 by: TH_A743_SQL_S01
+-- Scripts included:
+--      TH_A743_SQL_S01
+ 
+begin wwv_flow.g_user := nvl(wwv_flow.g_user,'TH_A743_SQL_S01'); end;
+/
+prompt --application/sql/scripts
+prompt ...exporting script file
+--
+begin
+    wwv_flow_imp.g_varchar2_table := wwv_flow_imp.empty_varchar2_table;
+    wwv_flow_imp.g_varchar2_table(1) := '4445434C4152450D0A0D0A2020765F6E616D6520437573746F6D6572732E437573746F6D65725F4E616D6525545950453B0D0A0D0A424547494E0D0A0D0A2020494E5345525420494E544F20437573746F6D6572732028437573746F6D65725F49442C20';
+    wwv_flow_imp.g_varchar2_table(2) := '437573746F6D65725F4E616D652C2050686F6E652C20416464726573732C20456D61696C290D0A0D0A202056414C554553202827435F44454D4F272C202744656D6F20437573746F6D6572272C20273038302D3132332D34353637272C202742616E676B';
+    wwv_flow_imp.g_varchar2_table(3) := '6F6B272C202764656D6F406578616D706C652E636F6D27293B0D0A0D0A2020434F4D4D49543B0D0A0D0A202055504441544520437573746F6D6572732053455420437573746F6D65725F4E616D65203D2027557064617465642044656D6F20437573746F';
+    wwv_flow_imp.g_varchar2_table(4) := '6D6572270D0A0D0A2020574845524520437573746F6D65725F4944203D2027435F44454D4F270D0A0D0A20202020414E44204E4F5420455849535453202853454C45435420312046524F4D204F7264657273206F205748455245206F2E437573746F6D65';
+    wwv_flow_imp.g_varchar2_table(5) := '725F4944203D20437573746F6D6572732E437573746F6D65725F4944293B0D0A0D0A2020524F4C4C4241434B3B0D0A0D0A202053454C45435420437573746F6D65725F4E616D6520494E544F20765F6E616D652046524F4D20437573746F6D6572732057';
+    wwv_flow_imp.g_varchar2_table(6) := '4845524520437573746F6D65725F4944203D2027435F44454D4F273B0D0A0D0A2020494620765F6E616D65203C3E202744656D6F20437573746F6D657227205448454E0D0A0D0A2020202052414953455F4150504C49434154494F4E5F4552524F52282D';
+    wwv_flow_imp.g_varchar2_table(7) := '32303030312C2027524F4C4C4241434B2064656D6F6E7374726174696F6E206661696C656427293B0D0A0D0A2020454E442049463B0D0A0D0A202044424D535F4F55545055542E5055545F4C494E452827504153533A20636F6D6D697474656420696E73';
+    wwv_flow_imp.g_varchar2_table(8) := '6572742072656D61696E733B20726F6C6C65642D6261636B207570646174652077617320756E646F6E652E27293B0D0A0D0A202044454C4554452046524F4D20437573746F6D6572730D0A0D0A2020574845524520437573746F6D65725F4944203D2027';
+    wwv_flow_imp.g_varchar2_table(9) := '435F44454D4F270D0A0D0A20202020414E44204E4F5420455849535453202853454C45435420312046524F4D204F7264657273206F205748455245206F2E437573746F6D65725F4944203D20437573746F6D6572732E437573746F6D65725F4944293B0D';
+    wwv_flow_imp.g_varchar2_table(10) := '0A0D0A2020434F4D4D49543B0D0A0D0A202044424D535F4F55545055542E5055545F4C494E452827504153533A20636F6E646974696F6E616C2044454C45544520636F6D6D69747465643B2064656D6F20637573746F6D65722072656D6F7665642E2729';
+    wwv_flow_imp.g_varchar2_table(11) := '3B0D0A0D0A455843455054494F4E205748454E204F5448455253205448454E0D0A0D0A2020524F4C4C4241434B3B0D0A0D0A202052414953453B0D0A0D0A454E443B0D0A0D0A2F0D0A0D0A';
+end;
+/
+ 
+declare
+  l_name   varchar2(255);
+begin
+  l_name   := '3538664968729353385/Transaction Demonstration';
+  wwv_imp_workspace.import_script(
+    p_name          => l_name,
+    p_varchar2_table=> wwv_flow_imp.g_varchar2_table,
+    p_pathid=> null,
+    p_filename=> 'Transaction Demonstration',
+    p_title=> 'Transaction Demonstration',
+    p_mime_type=> 'text/plain',
+    p_dad_charset=> '',
+    p_deleted_as_of=> to_date('00010101000000','YYYYMMDDHH24MISS'),
+    p_content_type=> 'BLOB',
+    p_language=> '',
+    p_description=> '',
+    p_file_type=> 'SCRIPT',
+    p_file_charset=> 'utf-8');
+end;
+/
+begin
+wwv_flow_imp.import_end(p_auto_install_sup_obj => nvl(wwv_flow_application_install.get_auto_install_sup_obj, false)
+);
+--commit;
+end;
+/
+set verify on feedback on define on
+prompt  ...done
